@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <p>线上更新</p>
+    <p>线上更新 在测试</p>
     <router-view/>
   </div>
 </template>
