@@ -4,12 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
+
+import Vuex from 'vuex'
+import storeConfig from './vuex/store'
 Vue.config.productionTip = false
 
+Vue.use(Vuex);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
