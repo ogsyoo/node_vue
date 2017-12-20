@@ -1,8 +1,10 @@
 <template>
     <div>
         first:{{msg}}  {{this.$route.params.name}}
-        {{$store.state.count}}
+        store:{{$store.test.state}}
         <button id='btn' @click="kua()">跨域</button>
+        <button id='btn' @click="post()">post</button>
+        <button id='btn' @click="put()">put</button>
     </div>
 </template>
 <script>
@@ -17,11 +19,19 @@ export default {
   },
   store,
   methods: {
-    kua:function() {
-      $.getJSON("http://localhost:8088/gsy?id=0&callback=?", function(
-        json
-      ) {
-        console.log(json);
+    post: function() {
+      this.$http.post("/post", { emulateJSON: true }).then(response => {
+        console.log(response.data);
+      });
+      // $.getJSON("http://localhost:8088/api/gsy?id=0&callback=?", function(
+      //   json
+      // ) {
+      //   console.log(json);
+      // });
+    },
+    put:function(){
+        this.$http.put("/post", { emulateJSON: true }).then(response => {
+        console.log(response.data);
       });
     }
   },
