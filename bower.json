@@ -1,0 +1,17 @@
+{
+  "name": "node_vue",
+  "description": "A Vue.js project",
+  "main": "",
+  "authors": [
+    "gaoshiyao <shiyao@spacesystech.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ogsyoo/node_vue",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

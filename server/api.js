@@ -25,7 +25,7 @@ router.post('/api/login/createAccount',(req,res) => {
 // 获取已有账号接口
 router.get('/api/gsy',(req,res) => {
     // 通过模型去查找数据库
-   res.send("gsy");
+   res.send("gsy123124214");
 });
 
 module.exports = router;
